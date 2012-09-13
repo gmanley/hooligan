@@ -71,7 +71,7 @@ pre, code {
 }
 
 /* line 65, ../_sass/_base.scss */
-pre > code {
+pre code {
   /* Reset box-shadow for pygments */
   background: none;
   box-shadow: none;

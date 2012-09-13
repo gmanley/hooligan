@@ -14,28 +14,28 @@ pre .atv, code .atv { color: #65B042; } /* html/xml attribute value - green */
 pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
 
 pre.prettyprint, code.prettyprint {
-﻿  background-color: #000;
-﻿  -moz-border-radius: 8px;
-﻿  -webkit-border-radius: 8px;
-﻿  -o-border-radius: 8px;
-﻿  -ms-border-radius: 8px;
-﻿  -khtml-border-radius: 8px;
-﻿  border-radius: 8px;
+  background-color: #000;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
 }
 
 pre.prettyprint {
-﻿  width: 95%;
-﻿  margin: 1em auto;
-﻿  padding: 1em;
-﻿  white-space: pre-wrap;
+  width: 95%;
+  margin: 1em auto;
+  padding: 1em;
+  white-space: pre-wrap;
 }
 
 
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; } /* IE indents via margin-left */
-li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; margin-left: 32px } /* IE indents via margin-left */
+/*li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }*/
 /* Alternate shading for lines */
-li.L1,li.L3,li.L5,li.L7,li.L9 { }
+/*li.L1,li.L3,li.L5,li.L7,li.L9 { }*/
 
 @media print {
   pre .str, code .str { color: #060; }
