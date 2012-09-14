@@ -56,7 +56,8 @@ pre, code {
 
 pre code, h1 code, h2 code {
   /* Reset box-shadow for pygments */
-  background: none;
+  background: none !important;
+  /* getting in a fist fight with freaking tomorrow-night theme */
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
