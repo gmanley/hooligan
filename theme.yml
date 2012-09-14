@@ -14,10 +14,9 @@
       "css/darkstrap.css",
       "css/style.css?body=1"
     ],
-   
     "widgets" : {
-      "google_prettify" : "sunburst.css"
-    }    
+      "highlightjs" : "tomorrow-night.css"
+    }
   },
 
   "javascripts" : {
