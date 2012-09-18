@@ -83,6 +83,11 @@ hr {
     .navbar div.navbar-inner ul.nav:first-child li a {
       padding: 12px 10px 8px; }
 
+/* phone and tablet - push the padding on article content a bit */
+@media screen and (max-width: 767px) {
+  #article-content, .page-header {
+    padding-left: 7px;
+    padding-right: 7px; } }
 .container > footer {
   margin-top: 20px;
   clear: both; }

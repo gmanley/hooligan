@@ -100,6 +100,13 @@ hr {
   }
 }
 
+/* phone and tablet - push the padding on article content a bit */
+@media screen and (max-width: 767px) {
+  #article-content, .page-header {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
 
 .container > footer {
   margin-top: 20px;
