@@ -8,6 +8,9 @@
   {{/ page.description }}
     <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{# site.author.feedburner }}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="http://feeds.feedburner.com/{{ site.author.feedburner }}"/>
+  {{/ site.author.feedburner }}
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -46,34 +49,81 @@
               {{# site.navigation?to_pages }}
                 {{> pages_list }}
               {{/ site.navigation?to_pages }}
-            </ul>
-            <ul class="nav pull-right social">
-              <li class="divider-vertical"></li>
               {{# site.author.github }}
                 <li>
-                  <a href="https://www.github.com/{{ site.author.github }}" class="zocial github" target="_blank"></a>
+                  <a href="https://www.github.com/{{ site.author.github }}" class="hidden-desktop" target="_blank">Github</a>
                 </li>
               {{/ site.author.github }}
               {{# site.author.googleplus }}
                 <li>
-                  <a href="https://profiles.google.com/{{ site.author.google }}" class="zocial googleplus icon" target="_blank"></a>
+                  <a href="https://profiles.google.com/{{ site.author.googleplus }}" class="hidden-desktop" target="_blank">Google+</a>
                 </li>
               {{/ site.author.googleplus }}
               {{# site.author.twitter }}
                 <li>
-                  <a href="http://www.twitter.com/{{ site.author.twitter }}" class="zocial twitter icon" target="_blank"></a>
+                  <a href="http://www.twitter.com/{{ site.author.twitter }}" class="hidden-desktop" target="_blank">Twitter</a>
                 </li>
               {{/ site.author.twitter }}
               {{# site.author.facebook }}
                 <li>
-                  <a href="http://www.facebook.com/{{ site.author.facebook }}" class="zocial facebook icon" target="_blank"></a>
+                  <a href="http://www.facebook.com/{{ site.author.facebook }}" class="hidden-desktop" target="_blank">Facebook</a>
                 </li>
               {{/ site.author.facebook }}
               {{# site.author.linkedin }}
                 <li>
-                  <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="zocial linkedin icon" target="_blank"></a>
+                  <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="hidden-desktop" target="_blank">LinkedIn</a>
                 </li>
               {{/ site.author.linkedin }}
+              {{# site.author.feedburner }}
+                <li>
+                  <a href="/rss.xml" class="hidden-desktop" target="_blank">RSS</a>
+                </li>
+              {{/ site.author.feedburner }}
+            </ul>
+            <ul class="nav pull-right social visible-desktop">
+              <li class="divider-vertical"></li>
+              {{# site.author.github }}
+                <li>
+                <a href="https://www.github.com/{{ site.author.github }}" class="zocial github icon" title="github.com:{{ site.author.github }}" target="_blank">
+                    <span class="hidden-desktop">Github</span>
+                  </a>
+                </li>
+              {{/ site.author.github }}
+              {{# site.author.googleplus }}
+                <li>
+                  <a href="https://profiles.google.com/{{ site.author.google }}" class="zocial googleplus icon" target="_blank">
+                    <span class="hidden-desktop">Google+</span>
+                  </a>
+                </li>
+              {{/ site.author.googleplus }}
+              {{# site.author.twitter }}
+                <li>
+                  <a href="http://www.twitter.com/{{ site.author.twitter }}" class="zocial twitter icon" target="_blank">
+                    <span class="hidden-desktop">Twitter</span>
+                  </a>
+                </li>
+              {{/ site.author.twitter }}
+              {{# site.author.facebook }}
+                <li>
+                  <a href="http://www.facebook.com/{{ site.author.facebook }}" class="zocial facebook icon" target="_blank">
+                    <span class="hidden-desktop">Facebook</span>
+                  </a>
+                </li>
+              {{/ site.author.facebook }}
+              {{# site.author.linkedin }}
+                <li>
+                  <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="zocial linkedin icon" target="_blank">
+                    <span class="hidden-desktop">LinkedIn</span>
+                  </a>
+                </li>
+              {{/ site.author.linkedin }}
+              {{# site.author.feedburner }}
+                <li>
+                  <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" class="zocial rss icon" title="RSS" target="_blank">
+                    <span class="hidden-desktop">RSS</span>
+                  </a>
+                </li>
+              {{/ site.author.feedburner }}
             </ul>
           </div><!--div.nav-collapse-->
         </div><!--div.container-fluid-->

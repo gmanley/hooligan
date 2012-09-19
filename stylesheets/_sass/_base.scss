@@ -77,9 +77,9 @@ pre code, h1 code, h2 code {
 
 hr {
   border:none;
-  background:#000;
+  background:rgba(0,0,0,0.7);
   height:1px;
-  border-bottom:1px solid rgba(255, 255, 255, 0.3);
+  /*border-bottom:1px solid rgba(255, 255, 255, 0.3);*/
 }
 
 /* Layout */
@@ -116,24 +116,24 @@ hr {
   text-align: center; /* center align it with the container */
 }
 
-div.sidebar {
-  @include box-shadow(
-    rgba(255, 255, 255, 0.1) 0 1px 0, 
-    rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset
-  );
-  background: #202020;
-  background-color: rgba(0, 0, 0, 0.3);
-  @include border-radius;
-  h2, p {
-    padding:15px;
-  }
-  h2 {
-    padding-bottom: 0;
-  }
-  p {
-    padding-top: 0;
-  }
-}
+/*div.sidebar {*/
+  /*@include box-shadow(*/
+    /*rgba(255, 255, 255, 0.1) 0 1px 0, */
+    /*rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset*/
+  /*);*/
+  /*background: #202020;*/
+  /*background-color: rgba(0, 0, 0, 0.3);*/
+  /*@include border-radius;*/
+  /*h2, p {*/
+    /*padding:15px;*/
+  /*}*/
+  /*h2 {*/
+    /*padding-bottom: 0;*/
+  /*}*/
+  /*p {*/
+    /*padding-top: 0;*/
+  /*}*/
+/*}*/
 
 /* Page Content */
 .content {
@@ -161,6 +161,13 @@ div.sidebar {
     }  
   }
 }
+
+/* I do not like this paragraph style change */
+/*p {
+  padding-bottom:15px;
+  line-height:25px;
+  margin: 0;
+}*/
 
 /* Page header tweaks */
 .page-header {
@@ -209,6 +216,7 @@ a.btn, a.btn.disabled {
   -o-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
 
   &:hover {
+    color: rgba(255, 255, 255, 1.0);
     background:rgba(255,255,255, 0.05);
   }
   &.disabled {
@@ -216,19 +224,37 @@ a.btn, a.btn.disabled {
   }
 }
 
-/* tag_box ======================================================== */
+/* Tags */
 .tag_box {
   list-style:none;
   margin:0;
   padding:5px 0 ;
   overflow:hidden;
+  &.inline {
+    li { float:left }
+  }
+  li {
+    line-height: 28px;
+  }
+  a {
+    &.active {
+      background:#57A957;
+      border:1px solid #4C964D;
+      color: #FFF;
+    }
+    span{
+      vertical-align: super;
+      font-size: 0.8em;
+    }
+  }
 }
-.tag_box li {
-  line-height:28px;
-}
-.tag_box.inline li {
-  float:left;
-}
+/*.tag_box li {*/
+  /*line-height:28px;*/
+/*}*/
+/*.tag_box.inline li {*/
+  /*float:left;*/
+/*}*/
+.tag_box.inline a,
 .tag_box a {
   padding: 3px 6px;
   margin: 2px;
@@ -244,15 +270,15 @@ a.btn, a.btn.disabled {
 
 }
 
-.tag_box a span{
-  vertical-align:super;
-  font-size:0.8em;
-}
-.tag_box a.active {
-  background:#57A957;
-  border:1px solid #4C964D;
-  color:#FFF;
-}
+/*.tag_box a span{*/
+  /*vertical-align:super;*/
+  /*font-size:0.8em;*/
+/*}*/
+/*.tag_box a.active {*/
+  /*background:#57A957;*/
+  /*border:1px solid #4C964D;*/
+  /*color:#FFF;*/
+/*}*/
   
 /* Page-specific */
 div.content {
@@ -281,6 +307,11 @@ div.content {
 .zocial.linkedin:focus,
 .zocial.linkedin:hover {
   color:#50a1cb !important;
+}
+
+.zocial.rss:focus,
+.zocial.rss:hover {
+  color:#fb9d3a !important;
 }
 
 
