@@ -34,11 +34,11 @@ body {
   body {
     font-size: 90%;
   }
-  /* phone and tablet - push the padding on article content a bit */
-  /*#article-content, .page-header {*/
-    /*padding-left: 7px;*/
-    /*padding-right: 7px;*/
-  /*}*/
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 110%;
+  }
 }
 /* end of typography hacks */
 
