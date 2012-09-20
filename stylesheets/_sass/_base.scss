@@ -20,14 +20,33 @@ body {
   text-shadow:1px 1px 1px #000;
   height:100%; 
   font-family: 'Oxygen', sans-serif; 
-  font-size: 14px;
+  font-size: 100%;
 }
-   
+
+/* typography hacks */
+#article-content {
+  & > p,
+  & li {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 90%;
+  }
+  /* phone and tablet - push the padding on article content a bit */
+  #article-content, .page-header {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+/* end of typography hacks */
+
 h1,h2,h3,h4,h5,h6 {
   margin:0;
   font-weight:normal;
   color:#999;
-  text-rendering:optimizelegibility;
+  text-rendering: optimizelegibility;
   font-family: 'Advent Pro', sans-serif;
   /*font-family: 'Pontano Sans', sans-serif;*/
 } 
@@ -50,19 +69,14 @@ h1, h2 {
   margin: 0 0 15px;
 }
 
-h1, h1 code {
-  font-size:40px
-}
-
-h2, h2 code {
-  font-size: 30px;
-}
+h1 { font-size:2.5em;    & code { font-size:1em } }
+h2 { font-size:1.875em;  & code { font-size:1em } }
 
 strong { /* just makes it stand out a little bit more */
   color: #d8d8d8;
 }
 
-pre, code { /* fixed a stupid bug, probably a typo or someone not understanding SCSS/CSS */
+pre, code {
   color:#ccc;
 }
 
@@ -84,27 +98,19 @@ hr {
 
 /* Layout */
 .navbar {
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
   div.navbar-inner {
     @include border-radius(0);
-    a.brand {
-      padding:10px 20px;
-    }
-    ul.nav:first-child {
-      li {
-        a {
-          padding:12px 10px 8px;
-        }
-      }
-    }
-  }
-}
-
-/* phone and tablet - push the padding on article content a bit */
-@media screen and (max-width: 767px) {
-  #article-content, .page-header {
-    padding-left: 7px;
-    padding-right: 7px;
+    /*[>a.brand {<]*/
+      /*[>padding:10px 20px;<]*/
+    /*[>}<]*/
+    /*[>ul.nav:first-child {<]*/
+      /*[>li {<]*/
+        /*[>a {<]*/
+          /*[>padding:12px 10px 8px;<]*/
+        /*[>}<]*/
+      /*[>}<]*/
+    /*[>}<]*/
   }
 }
 
@@ -234,7 +240,7 @@ a.btn, a.btn.disabled {
     li { float:left }
   }
   li {
-    line-height: 28px;
+    line-height: 1.750em;
   }
   a {
     &.active {
@@ -291,6 +297,10 @@ div.content {
 .navbar a.zocial {
   padding-left:0 !important;
   padding-right:0 !important;
+}
+
+.navbar ul.social li a {
+  padding-top: 5px;
 }
 
 .zocial.googleplus:focus,

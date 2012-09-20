@@ -13,8 +13,21 @@ body {
   text-shadow: 1px 1px 1px #000;
   height: 100%;
   font-family: 'Oxygen', sans-serif;
-  font-size: 14px; }
+  font-size: 100%; }
 
+/* typography hacks */
+#article-content > p, #article-content li {
+  text-align: justify; }
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 90%; }
+
+  /* phone and tablet - push the padding on article content a bit */
+  #article-content, .page-header {
+    padding-left: 7px;
+    padding-right: 7px; } }
+/* end of typography hacks */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
@@ -40,18 +53,21 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 h1, h2 {
   margin: 0 0 15px; }
 
-h1, h1 code {
-  font-size: 40px; }
+h1 {
+  font-size: 2.5em; }
+  h1 code {
+    font-size: 1em; }
 
-h2, h2 code {
-  font-size: 30px; }
+h2 {
+  font-size: 1.875em; }
+  h2 code {
+    font-size: 1em; }
 
 strong {
   /* just makes it stand out a little bit more */
   color: #d8d8d8; }
 
 pre, code {
-  /* fixed a stupid bug, probably a typo or someone not understanding SCSS/CSS */
   color: #ccc; }
 
 pre code, h1 code, h2 code {
@@ -71,23 +87,24 @@ hr {
 
 /* Layout */
 .navbar {
-  margin-bottom: 0; }
+  /*margin-bottom: 0;*/ }
   .navbar div.navbar-inner {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    border-radius: 0; }
-    .navbar div.navbar-inner a.brand {
-      padding: 10px 20px; }
-    .navbar div.navbar-inner ul.nav:first-child li a {
-      padding: 12px 10px 8px; }
+    border-radius: 0;
+    /*[>a.brand {<]*/
+    /*[>padding:10px 20px;<]*/
+    /*[>}<]*/
+    /*[>ul.nav:first-child {<]*/
+    /*[>li {<]*/
+    /*[>a {<]*/
+    /*[>padding:12px 10px 8px;<]*/
+    /*[>}<]*/
+    /*[>}<]*/
+    /*[>}<]*/ }
 
-/* phone and tablet - push the padding on article content a bit */
-@media screen and (max-width: 767px) {
-  #article-content, .page-header {
-    padding-left: 7px;
-    padding-right: 7px; } }
 .container > footer {
   margin-top: 20px;
   clear: both; }
@@ -190,7 +207,7 @@ a.btn, a.btn.disabled {
   .tag_box.inline li {
     float: left; }
   .tag_box li {
-    line-height: 28px; }
+    line-height: 1.750em; }
   .tag_box a.active {
     background: #57A957;
     border: 1px solid #4C964D;
@@ -234,6 +251,9 @@ div.content div#page-index {
 .navbar a.zocial {
   padding-left: 0 !important;
   padding-right: 0 !important; }
+
+.navbar ul.social li a {
+  padding-top: 5px; }
 
 .zocial.googleplus:focus,
 .zocial.googleplus:hover {
@@ -293,7 +313,7 @@ article.post header {
     margin-left: 3px; }
 
 div.posts article div.date {
-  font-size: 10px;
+  font-size: 0.625em;
   padding: 10px 0; }
   div.posts article div.date time {
     -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
