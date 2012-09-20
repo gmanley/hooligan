@@ -31,8 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #999;
   text-rendering: optimizelegibility;
-  font-family: 'Advent Pro', sans-serif;
-  /*font-family: 'Pontano Sans', sans-serif;*/ }
+  font-family: 'Advent Pro', sans-serif; }
 
 a {
   color: #4cb4e8;
@@ -80,8 +79,7 @@ pre code, h1 code, h2 code {
 hr {
   border: none;
   background: rgba(0, 0, 0, 0.7);
-  height: 1px;
-  /*border-bottom:1px solid rgba(255, 255, 255, 0.3);*/ }
+  height: 1px; }
 
 /* Layout */
 .navbar {
@@ -91,17 +89,7 @@ hr {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    border-radius: 0;
-    /*[>a.brand {<]*/
-    /*[>padding:10px 20px;<]*/
-    /*[>}<]*/
-    /*[>ul.nav:first-child {<]*/
-    /*[>li {<]*/
-    /*[>a {<]*/
-    /*[>padding:12px 10px 8px;<]*/
-    /*[>}<]*/
-    /*[>}<]*/
-    /*[>}<]*/ }
+    border-radius: 0; }
 
 .container > footer {
   margin-top: 20px;
@@ -111,24 +99,6 @@ hr {
   text-align: center;
   /* center align it with the container */ }
 
-/*div.sidebar {*/
-/*@include box-shadow(*/
-/*rgba(255, 255, 255, 0.1) 0 1px 0, */
-/*rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset*/
-/*);*/
-/*background: #202020;*/
-/*background-color: rgba(0, 0, 0, 0.3);*/
-/*@include border-radius;*/
-/*h2, p {*/
-/*padding:15px;*/
-/*}*/
-/*h2 {*/
-/*padding-bottom: 0;*/
-/*}*/
-/*p {*/
-/*padding-top: 0;*/
-/*}*/
-/*}*/
 /* Page Content */
 .content {
   /* when there's no page-header */
@@ -145,12 +115,6 @@ hr {
     .content div.row div.span4 h4:first {
       margin-top: 0; }
 
-/* I do not like this paragraph style change */
-/*p {
-  padding-bottom:15px;
-  line-height:25px;
-  margin: 0;
-}*/
 /* Page header tweaks */
 .page-header {
   -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
@@ -214,12 +178,6 @@ a.btn, a.btn.disabled {
     vertical-align: super;
     font-size: 0.8em; }
 
-/*.tag_box li {*/
-/*line-height:28px;*/
-/*}*/
-/*.tag_box.inline li {*/
-/*float:left;*/
-/*}*/
 .tag_box.inline a,
 .tag_box a {
   padding: 3px 6px;
@@ -232,15 +190,6 @@ a.btn, a.btn.disabled {
   -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 1px 0, rgba(255, 255, 255, 0.5) 0 1px 1px 0px inset;
   -o-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset; }
 
-/*.tag_box a span{*/
-/*vertical-align:super;*/
-/*font-size:0.8em;*/
-/*}*/
-/*.tag_box a.active {*/
-/*background:#57A957;*/
-/*border:1px solid #4C964D;*/
-/*color:#FFF;*/
-/*}*/
 /* Page-specific */
 div.content div#page-index {
   padding-top: 30px !important; }

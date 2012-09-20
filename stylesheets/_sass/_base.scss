@@ -48,7 +48,6 @@ h1,h2,h3,h4,h5,h6 {
   color:#999;
   text-rendering: optimizelegibility;
   font-family: 'Advent Pro', sans-serif;
-  /*font-family: 'Pontano Sans', sans-serif;*/
 } 
 
 a {
@@ -93,7 +92,6 @@ hr {
   border:none;
   background:rgba(0,0,0,0.7);
   height:1px;
-  /*border-bottom:1px solid rgba(255, 255, 255, 0.3);*/
 }
 
 /* Layout */
@@ -101,16 +99,6 @@ hr {
   /*margin-bottom: 0;*/
   div.navbar-inner {
     @include border-radius(0);
-    /*[>a.brand {<]*/
-      /*[>padding:10px 20px;<]*/
-    /*[>}<]*/
-    /*[>ul.nav:first-child {<]*/
-      /*[>li {<]*/
-        /*[>a {<]*/
-          /*[>padding:12px 10px 8px;<]*/
-        /*[>}<]*/
-      /*[>}<]*/
-    /*[>}<]*/
   }
 }
 
@@ -121,25 +109,6 @@ hr {
 .container > footer p {
   text-align: center; /* center align it with the container */
 }
-
-/*div.sidebar {*/
-  /*@include box-shadow(*/
-    /*rgba(255, 255, 255, 0.1) 0 1px 0, */
-    /*rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset*/
-  /*);*/
-  /*background: #202020;*/
-  /*background-color: rgba(0, 0, 0, 0.3);*/
-  /*@include border-radius;*/
-  /*h2, p {*/
-    /*padding:15px;*/
-  /*}*/
-  /*h2 {*/
-    /*padding-bottom: 0;*/
-  /*}*/
-  /*p {*/
-    /*padding-top: 0;*/
-  /*}*/
-/*}*/
 
 /* Page Content */
 .content {
@@ -167,13 +136,6 @@ hr {
     }  
   }
 }
-
-/* I do not like this paragraph style change */
-/*p {
-  padding-bottom:15px;
-  line-height:25px;
-  margin: 0;
-}*/
 
 /* Page header tweaks */
 .page-header {
@@ -254,12 +216,7 @@ a.btn, a.btn.disabled {
     }
   }
 }
-/*.tag_box li {*/
-  /*line-height:28px;*/
-/*}*/
-/*.tag_box.inline li {*/
-  /*float:left;*/
-/*}*/
+
 .tag_box.inline a,
 .tag_box a {
   padding: 3px 6px;
@@ -276,16 +233,6 @@ a.btn, a.btn.disabled {
 
 }
 
-/*.tag_box a span{*/
-  /*vertical-align:super;*/
-  /*font-size:0.8em;*/
-/*}*/
-/*.tag_box a.active {*/
-  /*background:#57A957;*/
-  /*border:1px solid #4C964D;*/
-  /*color:#FFF;*/
-/*}*/
-  
 /* Page-specific */
 div.content {
   div#page-index {
