@@ -1,5 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Advent+Pro);
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
+/*@import url(http://fonts.googleapis.com/css?family=Advent+Pro);*/
+/*@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+/*@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,latin-ext,cyrillic);*/
+/*@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oxygen|Advent+Pro&subset=latin,latin-ext,cyrillic);*/
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono|PT+Serif:400,700,400italic,700italic|Oxygen|Advent+Pro&subset=latin,latin-ext,cyrillic);
 
 /* Theme Vars */
 $link-color: #4cb4e8;
@@ -25,6 +28,7 @@ body {
 
 /* typography hacks */
 #article-content {
+  font-family: 'PT Serif', serif;  
   & > p,
   & li {
     text-align: justify;
@@ -77,6 +81,7 @@ strong { /* just makes it stand out a little bit more */
 
 pre, code {
   color:#ccc;
+  font-family: "Oxygen Mono", Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
 
 pre code, h1 code, h2 code {
