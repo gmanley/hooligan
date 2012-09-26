@@ -9,7 +9,27 @@ layout : default
 </div>
 
 <div class="row">
-  <div class="span12" id="article-content">
+  <div class="span9" id="article-content">
     {{{ content }}}
+  </div>
+  <div class="span3">
+    <section>
+      <h4>Other Pages</h4>
+      <ul>
+      {{# pages }}
+        {{> pages_list }}
+      {{/ pages }}
+      </ul>
+    </section>
+    <section>
+      <h4>Recent Posts</h4>
+      <ul>
+      {{# posts_latest }}
+        <li><a href="{{url}}">{{title}}</a></li>
+      {{/ posts_latest }}
+      </ul>
+    </section>
+      
+
   </div>
 </div>
