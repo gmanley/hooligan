@@ -13,6 +13,13 @@ layout : default
     {{{ content }}}
   </div>
   <div class="span3">
+    {{# page.date }}
+    <section>
+      <h4>Last Updated</h4>
+      <div class="date"><span>{{ page.date }}</span></div>
+    </section>
+    {{/ page.date }}
+
     <section>
       <h4>Other Pages</h4>
       <ul>
@@ -21,6 +28,7 @@ layout : default
       {{/ pages }}
       </ul>
     </section>
+
     <section>
       <h4>Recent Posts</h4>
       <ul>
