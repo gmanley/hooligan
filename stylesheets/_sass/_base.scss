@@ -23,7 +23,8 @@ body {
 }
 
 /* typography hacks */
-#article-content {
+#article-content,
+.justify {
   font-family: 'PT Serif', serif;  
   & > p,
   & li {
