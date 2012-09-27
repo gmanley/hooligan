@@ -30,6 +30,12 @@ body {
   & li {
     text-align: justify;
   }
+  li :last-child { margin-bottom: 0px; }
+  li { margin-bottom: 10px; }
+  li ul,
+  li ol {
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   body {
