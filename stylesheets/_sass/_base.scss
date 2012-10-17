@@ -247,6 +247,10 @@ a.btn, a.btn.disabled {
 
 }
 
+.sidebar-container section:not(:first-child) {
+  margin-top: 10px;
+}
+
 /* Page-specific */
 div.content {
   div#page-index {
