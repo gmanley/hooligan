@@ -27,7 +27,8 @@ body {
 .justify {
   font-family: 'PT Serif', serif;  
   & > p,
-  & li {
+  & li,
+  & blockquote {
     text-align: justify;
   }
   li :last-child { margin-bottom: 0px; }
